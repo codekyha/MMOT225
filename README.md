@@ -1,4 +1,4 @@
-#MMOT225 Bulut bilişim 
+# MMOT225 Bulut bilişim 
 
 **Eğitmen:** Dr. Öğr. Üyesi Hasan Oğuz  
 **Kurum:** İstanbul Okan Üniversitesi | Meslek Yüksekokulu  
