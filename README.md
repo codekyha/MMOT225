@@ -17,11 +17,4 @@ Dersi başarıyla tamamlayan öğrenciler:
 * Bulut bilişim hizmet modellerini (IaaS, PaaS, SaaS) analiz eder ve genel bulut (Public Cloud) platformları üzerinde temel kaynak (işlem, ağ, depolama) tahsisi yapar.
 * Sektör standardı terminal komutlarını (Linux, Docker, Git) temel düzeyde kullanır.
 
-## Depo İçerik Yapısı
 
-```text
-MMOT225 Bulut Bilişim/
-├── Sunumlar/             # Haftalık teorik ders sunumları (PDF ve .tex kaynak kodları)
-├── Lab_Foyleri/          # Laboratuvar seansları için adım adım uygulama yönergeleri
-├── Cheatsheets/          # Linux, Docker ve Git için hızlı referans kılavuzları
-└── Kaynak_Dosyalar/      # Konfigürasyon dosyaları, Dockerfile örnekleri ve test betikleri
