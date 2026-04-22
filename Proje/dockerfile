@@ -1,14 +1,14 @@
-# Temel imaj olarak hafif bir Python sürümü seçiyoruz [cite: 100]
+# Temel imaj olarak hafif bir Python sürümü seçiyoruz 
 FROM python:3.9-slim
 
-# Konteyner içindeki çalışma dizinini ayarlıyoruz [cite: 101]
+# Konteyner içindeki çalışma dizinini ayarlıyoruz 
 WORKDIR /app
 
-# Flask kütüphanesini kuruyoruz [cite: 102]
+# Flask kütüphanesini kuruyoruz 
 RUN pip install flask
 
-# Çalıştığımız dizindeki app.py dosyasını konteynerin çalışma dizinine kopyalıyoruz [cite: 103]
+# Çalıştığımız dizindeki app.py dosyasını konteynerin çalışma dizinine kopyalıyoruz 
 COPY app.py .
 
-# Konteyner ayağa kalktığında çalıştırılacak varsayılan komut [cite: 104]
+# Konteyner ayağa kalktığında çalıştırılacak varsayılan komut 
 CMD ["python", "app.py"]

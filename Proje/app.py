@@ -4,12 +4,12 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Ortam değişkenlerini (ENV) alıyoruz [cite 16]
+# Ortam değişkenlerini (ENV) alıyoruz
 musteri_adi = os.getenv(MUSTERI_ADI, Misafir Kurum)
 tema_rengi = os.getenv(TEMA_RENGI, #333333)
 hizmet_seviyesi = os.getenv(HIZMET_SEVIYESI, Standart)
 
-# Dinamik Tema Rengi İçeren Temel HTML Şablonu [cite 17]
+# Dinamik Tema Rengi İçeren Temel HTML Şablonu 
 html_sablon = 
 !DOCTYPE html
 html
@@ -26,7 +26,7 @@ body
 html
 
 
-# Route 1 Ana Sayfa [cite 15]
+# Route 1 Ana Sayfa 
 @app.route('')
 def ana_sayfa()
     icerik = f
@@ -36,7 +36,7 @@ def ana_sayfa()
     
     return html_sablon.format(renk=tema_rengi, icerik=icerik)
 
-# Route 2 Sistem Raporu [cite 15]
+# Route 2 Sistem Raporu 
 @app.route('rapor')
 def sistem_raporu()
     zaman = datetime.now().strftime(%Y-%m-%d %H%M%S)
@@ -50,7 +50,7 @@ def sistem_raporu()
     
     return html_sablon.format(renk=tema_rengi, icerik=icerik)
 
-# Route 3 Destek Talebi [cite 15]
+# Route 3 Destek Talebi 
 @app.route('destek')
 def destek_talebi()
     icerik = f
